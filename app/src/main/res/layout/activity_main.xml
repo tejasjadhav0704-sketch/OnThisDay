@@ -3,17 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/img"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         app:menu="@menu/tool_bar_menu"
-        android:background="#B6B6B6"
+        android:background="#000000"
+        app:titleTextColor="#C8C6C6"
         android:id="@+id/toolBar_id"
         app:title="@string/app_name"
+        app:subtitleTextColor="#C8C6C6"
         app:subtitle="My First Mini-Project"
-        app:navigationIcon="@drawable/hamburger"
+        app:navigationIcon="@drawable/outline_arrow_back_24"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,6 +33,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:layout_height="50dp"
+        android:textColor="#C8B8B8"
         android:layout_marginTop="36dp"
         android:background="@drawable/selectdate"
         android:text="Select Date👉🏻 📅"
@@ -42,12 +46,17 @@
 
     <TextView
         android:id="@+id/textViewData"
-        android:textStyle="bold"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selecteddate"
+        android:gravity="center"
+        android:padding="10dp"
         android:text="Selected Date :"
+        android:textColor="#C8B8B8"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView_id"
@@ -66,15 +75,28 @@
 
     </ProgressBar>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleView_id"
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_id">
 
-    </androidx.recyclerview.widget.RecyclerView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_id">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/emptyText"

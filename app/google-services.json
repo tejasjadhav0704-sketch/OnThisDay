@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "698420331804",
+    "firebase_url": "https://first-app-tj-default-rtdb.firebaseio.com",
+    "project_id": "first-app-tj",
+    "storage_bucket": "first-app-tj.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698420331804:android:bfd04a17916a929d1ea6d9",
+        "android_client_info": {
+          "package_name": "com.example.firstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2YjxAcwZ53u4xvM_PWgAy5aRSOjyBxc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698420331804:android:5212916a4c63ba651ea6d9",
+        "android_client_info": {
+          "package_name": "com.example.onthisday"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2YjxAcwZ53u4xvM_PWgAy5aRSOjyBxc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
