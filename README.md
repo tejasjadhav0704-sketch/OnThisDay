@@ -24,8 +24,17 @@ An Android application built with Kotlin that displays historical events that ha
 
 ## 📸 Screenshots
 
+Login Page
 <p align="center">
-  <img src="app/Screenshots/Screenshot.png" width="300">
+  <img src="app/Screenshots/login" width="300">
+</p>
+Register Page
+<p align="center">
+  <img src="app/register/login" width="300">
+</p>
+Main Activity
+<p align="center">
+  <img src="app/Screenshots/login" width="300">
 </p>
 
 ---
